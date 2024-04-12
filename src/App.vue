@@ -77,11 +77,10 @@
         })
         toast.success('Transaction added');
         }
+        editedTransaction.value = {}
 
         savedTransactionsToLocalStorage()
 
-
-        
     }
 
     const deleteTransaction = (transaction_id) => {

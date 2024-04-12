@@ -2,11 +2,11 @@
      <h3>History</h3>
         <ul id="list" class="list">
             <li v-for="transaction in transactions" :key='transaction.id' :class="transaction.amount < 0 ? 'minus' : 'plus'">
-                {{ transaction.text }} 
-                <div class="edit-btn-amount">
+                <div class="transaction">
+                    {{ transaction.text }} 
                     <span>${{ transaction.amount }}</span>
-                    <button class="edit-btn" @click="editTransaction(transaction.id)">Edit</button>
                 </div>
+                <button class="edit-btn" @click="editTransaction(transaction.id)">Edit</button>
                 <button class="delete-btn" @click="deleteTransaction(transaction.id)" >x</button>
             </li>
         </ul>

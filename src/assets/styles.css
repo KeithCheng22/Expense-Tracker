@@ -123,9 +123,9 @@ input[type='number'], input[type='email'] {
   margin: 10px 0;
 }
 
-.edit-btn-amount {
+.transaction {
   display: flex;
-  gap: 5rem
+  flex-direction: column;
 }
 
 .list li.plus {
@@ -156,6 +156,7 @@ input[type='number'], input[type='email'] {
     cursor: pointer;
     background-color: #9c88ff;
     border-radius: 6px;
+    padding: 0.5rem 0.8rem;
     border: none;
     color: white;
     transition: background-color 300ms

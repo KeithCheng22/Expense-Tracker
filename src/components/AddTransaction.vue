@@ -49,7 +49,6 @@
 
     const emit = defineEmits([
       'transaction-submitted',
-      'reset-edit-transaction'
     ])
 
     const onSubmit = () => {
@@ -69,8 +68,5 @@
       text.value = '';
       amount.value = ''
 
-      // emit('reset-edit-transaction') 
-
-      // setTimeout(() => window.location.href='/', 5500)
     }
 </script>
